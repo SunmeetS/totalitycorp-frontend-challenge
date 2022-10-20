@@ -242,8 +242,6 @@
 .navMainCollections {
   font-size: 14.5px;
   color: rgb(53, 56, 64);
-  box-sizing: border-box;
-  align-items: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -391,12 +389,6 @@
   width: 100vw;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
 
 .top,
 .middle {
@@ -507,9 +499,8 @@
   font-size: 14.5px;
   color: rgb(53, 56, 64);
   display: flex;
-  margin: 0px 0px 0px -8px;
-  gap: 40px;
-  padding: 0.6rem 2rem;
+  gap: 0.5rem;
+  /* margin: 0px 0px 0px -8px; */
 }
 
 .top {
@@ -679,10 +670,20 @@
   .rightMiddleFooter {
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    width: 100vw !important;
   }
 
   .notableCardGroup>* {
     scale: 0.9;
+  }
+
+  .navMainCollections>* {
+    font-size: 0.5rem;
+    color: rgb(53, 56, 64);
+    display: flex;
+    gap: 0.5rem;
+    /* margin: 0px 0px 0px -8px; */
   }
 
   .mediaIcons {
