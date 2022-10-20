@@ -399,6 +399,9 @@
   text-align: center;
 }
 
+.App{
+  overflow: hidden;
+}
 .active {
   border-bottom: 0.2rem solid black;
   padding-bottom: 1rem;
