@@ -1,38 +1,697 @@
-.App {
-  text-align: center;
+.mainNavbar {
+  color: rgb(53, 56, 64);
+  margin: 0px auto;
+  padding: 0px 16px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainFooter {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mediaIcons>* {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  --google-font-color-materialiconstwotone: none;
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0px;
+  appearance: button;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 12px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding: 17px 24px;
+  background-color: rgb(32, 129, 226);
+  border: 2px solid rgb(32, 129, 226);
+  color: rgb(255, 255, 255);
+  margin-right: 12px;
+  width: 54px;
+  height: 54px;
+  margin-top: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.last {
+  background-color: #1868B7;
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+}
+
+.topFooter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.topFooter>* {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: stretch;
+  width: 50%;
+}
+
+
+
+.emailGroup {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.email {
+  align-items: center;
+  border-radius: 12px;
+  outline: none;
+  padding: 12px;
+  width: 50%;
+  background: rgb(255, 255, 255);
+  margin-right: 1rem;
+  height: 2rem;
+}
+
+.emailGroup button {
+  height: 3.5rem;
+  width: 10rem;
+  padding: 17px 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(32, 129, 226);
+  border: 2px solid rgb(32, 129, 226);
+  color: rgb(255, 255, 255);
+}
+
+.middleFooter {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  width: 100vw;
+}
+
+.mainFooter>* {
+  border-bottom: 1px solid rgba(164, 209, 255, 0.4);
+  width: 80vw;
+  padding: 2rem;
+}
+
+.mainFooter h4 {
+  font-size: 1.3rem;
+}
+
+
+
+.rightMiddleFooter {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.leftMiddleFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftMiddleFooter h3 {
+  margin: 0.3rem 0rem;
+}
+
+.leftMiddleFooter p {
+  width: 90%;
+}
+
+.leftMiddleFooter img {
+  height: 6vh;
+}
+
+.leftTopFooter,
+.rightTopFooter {
+  width: 45%;
+  margin: 1rem;
+}
+
+.endFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.endFooter>* {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+}
+
+.groupBrowseByCategory>* {
+  margin: 1rem;
+}
+
+.groupBrowseByCategory {
+  display: flex;
+  overflow: scroll;
+}
+
+.groupBrowseByCategory>*>:nth-child(2) {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBrowseByCategory h1 {
+  margin-left: 1.5rem;
+}
+
+
+.mainNavbar>* {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchGroup {
+  box-sizing: border-box;
+  cursor: text;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid rgb(229, 232, 235);
+  color: rgb(4, 17, 29);
+  width: 40vw;
+  height: 48px;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 8px;
+  margin-right: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  font-size: 1rem;
+}
+
+.options>* {
+  margin: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  font-size: 1rem;
+}
+
+.searchGroup>* {
+  margin-right: 0.5rem;
+}
+
+.mainNftCard {
+  color: rgb(32, 129, 226);
+  border-radius: 16px;
+  height: 45vh;
+}
+
+.navMainCollections {
+  font-size: 14.5px;
+  color: rgb(53, 56, 64);
+  box-sizing: border-box;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.01rem solid rgba(128, 128, 128, 0.255);
+}
+
+.filter2 select {
+  margin: 0px;
+  appearance: button;
+  padding: 8px 16px 8px 24px;
+  height: 48px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background: inherit;
+  width: 100%;
+  color: rgb(53, 56, 64);
+  text-align: left;
+  opacity: 0.5;
+  border-radius: 12px;
+  border: 2px solid rgb(229, 232, 235);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.25s ease-in-out 0s;
+  cursor: default;
+}
+
+.filter2 button {
+  font: inherit;
+  margin: 0px;
+  appearance: button;
+  cursor: pointer;
+  height: 48px;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 12px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding: 11px 24px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(229, 232, 235);
+  color: rgb(4, 17, 29);
+}
+
+.filter2 button:hover {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0px;
+  appearance: button;
+  cursor: pointer;
+  height: 48px;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 12px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding: 11px 24px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(229, 232, 235);
+  transition: all 0.2s ease 0s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+  color: rgb(4, 17, 29);
+}
+
+.collectionComponentNav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.headingGroupCollectionComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20vw;
+}
+
+.headingNewAndNotable h1 {
+  margin: 0rem;
+  margin-left: 1.5rem;
+}
+
+.volume {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+}
+
+.mainNotableCard {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.upperNotableCard {
+  height: 40vh;
+  width: 30vw;
+}
+
+.lowerNotableCard i {
+  color: rgb(51, 197, 255);
+}
+
+.upperNotableCard img {
+  width: 380px;
+  height: 40vh;
+  border-radius: 1rem;
+  Object-fit: cover;
+  Object-position: center;
+  flex-shrink: 0;
+}
+
+.lowerNotableCard {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 1rem;
+  border-bottom: 0.1rem solid grey;
+  width: 380px;
+}
+
+.notableCardGroup {
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+  width: 100vw;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.top,
+.middle {
+  width: 100vw;
+  height: fit-content;
+  overflow-y: visible;
+  overflow-x: hidden !important;
+  text-align: center;
+}
+
+.active {
+  border-bottom: 0.2rem solid black;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.inactive {
+  border-bottom: none;
+  color: grey;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.mainNewAndNotable {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.lowerNotableCard>* {
+  margin: 0.5rem;
+}
+
+.lowerNotableCard img {
+  height: 10vh;
+  padding: 0.5rem;
+  margin: 0rem;
+  border-radius: 1rem;
+  position: relative;
+  top: -0.8rem;
+  background-color: white;
+}
+
+.index {
+  margin: 1rem;
+}
+
+.mainCollectionComponent {
+  display: flex;
+  justify-content: space-around;
+  width: 46vw;
+  margin: 1rem;
+}
+
+.collectionComponentGroup>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionComponentGroup {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.mainCollectionListItem div {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  font-size: 1.1rem;
+}
+
+.mainCollectionListItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.imageGroupCollectionListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageGroupCollectionListItem img {
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 72px;
+  width: 72px;
+}
+
+.navMainCollections>* {
+  font-size: 14.5px;
+  color: rgb(53, 56, 64);
+  display: flex;
+  margin: 0px 0px 0px -8px;
+  gap: 40px;
+  padding: 0.6rem 2rem;
+}
+
+.top {
+  background: url(https://opensea.io/static/images/magellan-gradient-light.png);
+  background-size: cover;
+}
+
+.allAboutNftsGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: min-content;
+}
+
+.description {
+  position: relative;
+  top: 275px;
+  left: -260px;
+  width: max-content;
+  color: white;
+  height: min-content;
+}
+
+
+
+.description>* {
+  margin: 0.5rem;
+}
+
+.mainNftCard>img {
+  border-radius: 1rem;
+  transition: 0.3s all;
+  width: 350px;
+  Object-fit: cover;
+  Object-position: center;
+  justify-content: flex-start;
+  margin: 0.5rem;
+}
+
+.mainNftCard:hover>img {
+  scale: 1.1;
+  border-radius: 1rem;
+  transition: 0.3s all;
+}
+
+.searchBar {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  min-height: inherit;
+  text-overflow: ellipsis;
+  cursor: text;
+}
+
+.logoGroup {
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+  padding: 8px 0px;
+  position: relative;
+}
+
+.logoGroup>h2 {
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+  color: black;
+  font-size: 20px;
+  height: 58;
+  box-sizing: border-box;
+  display: initial;
+  width: 100px;
+  margin-left: -1rem;
+}
+
+.logoGroup>img {
+  color: rgb(32, 129, 226);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0;
+  scale: 0.5;
+}
+
+.optionIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.optionIcons>* {
+  margin: 0.5rem;
+}
+
+.collectionComponentNav p {
+  margin-left: 5rem;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .middleFooter {
+
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .middleFooter>* {}
+
+  .options {
+    display: none;
+  }
+
+
+  .mainCollectionListItem>div {
+    width: 40vw;
+  }
+
+  .imageGroupCollectionListItem {
+    width: fit-content;
+  }
+
+  .collectionComponentNav {
+    display: flex;
+  }
+
+  .collectionComponentNav>* {
+    width: 40vw;
+    margin-left: 0rem !important;
+  }
+
+  .headingGroupCollectionComponent {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .headingGroupCollectionComponent>* {
+    margin-left: 0rem !important;
+  }
+
+  .mainCollectionComponent {
+    width: 100vw;
+  }
+
+  .mainFooter>*>* {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightMiddleFooter div {
+    width: 50vw;
+  }
+
+  .rightMiddleFooter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .notableCardGroup>* {
+    scale: 0.9;
+  }
+
+  .mediaIcons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .searchGroup {
+    display: none;
   }
 }
