@@ -347,6 +347,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .middle {
@@ -420,6 +421,10 @@
   border-bottom: 0.2rem solid black;
   padding-bottom: 1rem;
   color: black;
+}
+
+.active, .inactive{
+  cursor: pointer;
 }
 
 .inactive {
