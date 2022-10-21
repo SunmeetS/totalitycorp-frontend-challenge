@@ -6,7 +6,7 @@ export const Footer = () => {
             <div className="topFooter">
                 <div className="leftTopFooter">
                     <h4>Stay in the loop</h4>
-                    <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating OpenSea.</p>
+                    <p className='linksFooter'>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating OpenSea.</p>
                     <div className="emailGroup">
                         <input placeholder='Your email address' type="email" className="email" />
                         <button>Sign up</button>
@@ -30,50 +30,50 @@ export const Footer = () => {
                 <div className='leftMiddleFooter'>
                     <img src="https://opensea.io/static/images/logos/opensea-white.svg" alt="" />
                     <h3>OpenSea</h3>
-                    <p>The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+                    <p className='linksFooter'>The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
                 </div>
                 <div className='rightMiddleFooter'>
                     <div>
                         <h4>Marketplace</h4>
                         <div>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
-                            <p>All Nfts</p><p>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
                         </div>
                     </div>
                     <div>
                         <div>
                             <h4>My Account</h4>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
                         </div>
                         <div>
                             <h4>Stats</h4>
-                            <p>All Nfts</p> <p>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p> <p className='linksFooter'>All Nfts</p>
                         </div>
                     </div>
                     <div>
                         <h4>Resources</h4>
                         <div>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
-                            <p>All Nfts</p><p>All Nfts</p><p>All Nfts</p>
-                            <p>All Nfts</p><p>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p><p className='linksFooter'>All Nfts</p>
                         </div>
                     </div>
                     <div>
                         <h4>Company</h4>
                         <div>
-                            <p>All Nfts</p> <p>All Nfts</p> <p>All Nfts</p>
-                            <p>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p> <p className='linksFooter'>All Nfts</p> <p className='linksFooter'>All Nfts</p>
+                            <p className='linksFooter'>All Nfts</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="endFooter">
-                <p>© 2018 - 2022 Ozone Networks, Inc</p>
+                <p className='linksFooter'>© 2018 - 2022 Ozone Networks, Inc</p>
                 <div>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
+                    <p className='linksFooter'>Privacy Policy</p>
+                    <p className='linksFooter'>Terms of Service</p>
                 </div>
             </div>
         </div>

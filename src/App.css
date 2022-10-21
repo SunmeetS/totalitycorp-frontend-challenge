@@ -399,6 +399,20 @@
   text-align: center;
 }
 
+.linksFooter:hover{
+  scale: 1.05;
+  cursor: pointer;
+  text-shadow: 0rem 0rem 0.2rem rgb(255, 224, 224);
+  text-decoration: underline white;
+  transition: 0.3s all;
+}
+.linksFooter{
+  cursor: pointer;
+  text-decoration: underline transparent;
+  text-shadow: 0rem 0rem 0.3rem transparent;
+  transition: 0.3s all;
+}
+
 .App{
   overflow: hidden;
 }
